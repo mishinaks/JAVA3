@@ -3,13 +3,13 @@ public class Сalculator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите первое число: ");
-        int x = in.nextInt();
+        double x = in.nextDouble();
         System.out.println("Введите второе число: ");
-        int y = in.nextInt();
+        double y = in.nextDouble();
         in.nextLine();
         System.out.println("Введите один из символов ‘+’, ‘-’, ‘*’ или ‘/’. ");
         String sim = in.nextLine();
-        int res = 0;
+        double res = 0;
         switch (sim) {
             case "+":
                 res = x + y;
